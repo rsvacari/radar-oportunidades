@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Radar de Oportunidades</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Radar de Oportunidades</h1>
+    <nav>
+      <button id="tab-acoes">Ações & FIIs</button>
+      <button id="tab-noticias">Notícias TI & Mineração</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sec-acoes" class="active">
+      <h2>Melhores oportunidades de compra</h2>
+      <div class="controls">
+        <button id="btn-load-acoes">Carregar Ações</button>
+        <button id="btn-load-fiis">Carregar FIIs</button>
+      </div>
+      <table id="table-ativos">
+        <thead>
+          <tr>
+            <th>Papel</th>
+            <th>Tipo</th>
+            <th>Cotação</th>
+            <th>P/L</th>
+            <th>P/VP</th>
+            <th>ROE</th>
+            <th>Div.Yield</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="sec-noticias">
+      <h2>Notícias relevantes para TI em Mineração</h2>
+      <div id="news-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto pessoal - Renato</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
