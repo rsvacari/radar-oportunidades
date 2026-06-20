@@ -20,7 +20,7 @@ const btnLoadFiis = document.getElementById("btn-load-fiis");
 async function loadAtivos(tipo) {
   tbody.innerHTML = "<tr><td colspan='8'>Carregando...</td></tr>";
   try {
-	  const API_BASE = "https://radar-oportunidades-production-c8bb.up.railway.app";
+	  const API_BASE = "https://radar-oportunidades-api.renatovacari.workers.dev";
 	  const url = tipo === "acoes" ? `${API_BASE}/api/acoes` : `${API_BASE}/api/fiis`;
     const res = await fetch(url);
     const data = await res.json();
