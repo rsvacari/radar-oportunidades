@@ -1,8 +1,10 @@
 from flask import Flask, jsonify
 from scraping import get_acoes, get_fiis
 from scoring import rank_acoes, rank_fiis
+from flask_cors import CORS   # <-- ADICIONE ISTO
 
 app = Flask(__name__)
+CORS(app)  # <-- LIBERA ACESSO DE QUALQUER DOMÍNIO
 
 @app.route("/api/acoes")
 def api_acoes():
